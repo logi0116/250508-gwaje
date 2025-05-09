@@ -33,7 +33,6 @@
             margin: 50px;
             background-color: rgb(49, 49, 49);
             border-radius: 10px;
-
         }
 
 
@@ -52,12 +51,15 @@
             border-radius: 5px;
             /* 모서리 둥글게 (선택사항) */
             cursor: pointer;
+            transition: all 0.3s ease;
         }
 
         .gallery img:hover {
             filter: brightness(120%);
             transition: filter 0.2s ease;
-            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05) rotate(1deg) skew(1deg, 1deg);
+
         }
 
 
@@ -93,6 +95,7 @@
             /* 테두리 뒤에 배경이 보이도록 설정 가능 */
             border-radius: 5px;
             /* 모서리 둥글게 (선택사항) */
+            transition: all 0.3s ease;
 
 
         }
@@ -100,19 +103,42 @@
         .gallery2 img:hover {
             filter: brightness(120%);
             transition: filter 0.2s ease;
-            transform: scale(1.03);
+            transform: scale(1.05) rotate(1deg) skew(1deg, 1deg);
+
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+
+
         }
 
 
         .cola {
+
+            visibility: inherit;
+
             font-size: 30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             color: rgb(32, 32, 32);
+            animation: fadeUp 1s ease-out infinite
 
 
+
+
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0.5;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 
