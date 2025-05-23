@@ -1,0 +1,108 @@
+<!-- 일반적인 홈페이지에 쓰일 법한 골격들을 만들어줘. css 작업은 따로 할게 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* 적당히 이쁘게 html 요소 꾸미기 */
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    #hero {
+        flex: 2;
+        background-color: #e2e2e2;
+        padding: 20px;
+    }
+
+    #sidebar {
+        flex: 1;
+        background-color: #ccc;
+        padding: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Welcome to My Website</h2>
+            <p>This is a simple website layout.</p>
+        </section>
+
+        <section id="content">
+            <h2>Content Section</h2>
+            <p>This is where the main content goes.</p>
+        </section>
+
+        <aside id="sidebar">
+            <h3>Sidebar</h3>
+            <p>This is a sidebar with additional information.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
